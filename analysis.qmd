@@ -1,0 +1,22 @@
+---
+title: "Github Advanced"
+format: html
+author: Alexa Titherington
+execute:
+  echo: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+```{r}
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  labs(
+    title = "Fuel efficiency by vehicle weight",
+    x = "Weight (1000 lbs)",
+    y = "Miles per gallon"
+  )
+```
